@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Identity
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido a la implementación SSO Azure</h1>
+    <hr />
+    <a class="btn btn-success" asp-controller="Home" asp-action="login"> INGRESAR </a>
+    <hr />
+    @ViewBag.mensaje
+</div>

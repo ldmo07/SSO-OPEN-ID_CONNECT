@@ -1,0 +1,31 @@
+﻿@model autenticatioAzure.Models.UserProfileViewModel
+
+@{
+    ViewData["Title"] = "Perfil del Usuario";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+<h3>@ViewBag.mensaje</h3>
+<hr />
+<p>Aquí está la información de tu perfil:</p>
+
+<table class="table">
+    <tr>
+        <td>Nombre de Usuario:</td>
+        <td>@Model?.UserName</td>
+    </tr>
+    <tr>
+        <td>Correo Electrónico:</td>
+        <td>@Model?.Email</td>
+    </tr>
+    <tr>
+        <td>Nombre:</td>
+        <td>@Model?.FirstName</td>
+    </tr>
+    <tr>
+        <td>Apellido:</td>
+        <td>@Model?.LastName</td>
+    </tr>
+</table>
+
